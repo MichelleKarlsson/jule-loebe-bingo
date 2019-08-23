@@ -16,11 +16,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="route">
-        <Router >
-          <Link to="/plader/" >Plader</Link>
-        </Router>
-      <div className="bg">
+      
+      <div className="App">
         <header className="App-header">
           <p>
             Jule-Løbe-Bingo
@@ -33,10 +30,7 @@ class App extends Component {
           <p className="prev_nums">{this.state.prev}</p>
           <button onClick={this.generateNum}>Nyt tal</button>
         </header>
-      <div className="body">
-        
-      </div>
-    </div>
+      
     </div>
   );
 }
@@ -52,7 +46,7 @@ class App extends Component {
   } else if (this.state.prev.length < 10) {
     this.generateNum(e);
   } else {
-    return;
+    this.setState({prev:[]})
   }
 
   }

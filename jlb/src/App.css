@@ -7,6 +7,7 @@
   flex-direction: column;
   font-size: 32px;
   color: #FFFFFF;
+
 }
 
 .route {
@@ -17,7 +18,7 @@
 }
 
 .number {
-  font-size: 70px;
+  font-size: 40px;
 }
 
 .prev_nums {
@@ -34,29 +35,16 @@ a:hover {
 
 body {
   align-content: center;
-  background-color: #B4151C;
 }
 
-.bg {
-  align-content: center;
-  background-image: url(border2.gif);
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 button {
   border: none;
   background-color: green;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  border-radius: 25px;
+  align-self: center;
+  text-align: left;
   font-size: 16px;
-}
-
-.prev_nums {
-  padding: 5 px;
 }
