@@ -43,7 +43,7 @@ class App extends Component {
     });
 
     this.state.prev.push(rand);
-  } else if (this.state.prev.length < 10) {
+  } else if (this.state.prev.length <= 7) {
     this.generateNum(e);
   } else {
     this.setState({prev:[]})
